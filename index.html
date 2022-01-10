@@ -5,9 +5,9 @@
     <style type="text/css">
         * {marging:0; padding:0;}
         body {background: #222; color: #FFFF00; font-family: Arial; text-align:center;}
-        .wait_tip {font-size: 30px; padding-top: 60px;}
+        .wait_tip {font-size: 46px; padding-top: 100px;}
 
-        .link_wrap {padding-top: 60px; display: none;}
+        .link_wrap {padding-top: 100px; display: none;}
         a,a:hover,a:visited {color: #00CC00; font-size: 20px;}
     </style>
 </head>
@@ -16,12 +16,11 @@
 <div class="link_wrap"><a href="#" id="link">If you can't visit, click here</a></div>
 <script>
 let url = 'https://www.google.com';
-
-top.location.href = url;
+// top.location.href = url;
 function showLink() {
     document.getElementById('link').setAttribute('href', url);
 }
-setTimeout(showLink, 1000*6);
+setTimeout(showLink, 1000*5);
 </script>
 </body>
 </html>
